@@ -22,10 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
-        app:counterMaxLength="140"
-        app:counterTextAppearance="@android:style/Theme"
+        app:counterMaxLength="280"
         app:counterOverflowTextAppearance="@android:style/Theme"
-        >
+        app:counterTextAppearance="@android:style/Theme">
 
         <EditText
             android:id="@+id/etCompose"

@@ -26,7 +26,6 @@ public class ComposeActivity extends AppCompatActivity {
     public static final int TWEET_MAX_Count = 280;
     EditText etCompose;
     Button btnTweet;
-//    TextView etValue;
 
     TwitterClient client;
     @Override
@@ -38,7 +37,6 @@ public class ComposeActivity extends AppCompatActivity {
 
         etCompose = findViewById(R.id.etCompose);
         btnTweet = findViewById(R.id.btnTweet);
-//        etValue = findViewById(R.id.etValue);
 
         btnTweet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,25 +74,5 @@ public class ComposeActivity extends AppCompatActivity {
                 });
             }
         });
-
-//        EditText etValue = findViewById(R.id.etValue);
-//        etCompose.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                // Fires right as the text is being changed (even supplies the range of text)
-//            }
-//
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count,
-//                                          int after) {
-//                // Fires right before text is changing
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                // Fires right after the text has changed
-//                etValue.setText(s.toString());
-//            }
-//        });
     }
 }
